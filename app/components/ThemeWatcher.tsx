@@ -8,13 +8,22 @@ export default function ThemeWatcher() {
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
     const initialTheme = savedTheme || 'light';
     
-    document.documentElement.classList.toggle("dark", initialTheme === 'dark');
+    // Set initial theme
+    if (initialTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   }, []);
 
   useEffect(() => {
     const handleThemeChange = (event: CustomEvent<'light' | 'dark'>) => {
       const newTheme = event.detail;
-      document.documentElement.classList.toggle("dark", newTheme === 'dark');
+      if (newTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
       localStorage.setItem('theme', newTheme);
     };
 
