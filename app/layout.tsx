@@ -17,14 +17,6 @@ export const metadata: Metadata = {
   title: "Gabinet Ortopedyczny Piotr Socha",
   description:
     "Specjalista ortopedii i traumatologii narządu ruchu. Konsultacje, USG, iniekcje dostawowe, leczenie urazów i zmian przeciążeniowych.",
-  metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"),
-  openGraph: {
-    title: "Gabinet Ortopedyczny Piotr Socha",
-    description:
-      "Konsultacje ortopedyczne, USG narządu ruchu, iniekcje dostawowe. Kowary • Jelenia Góra",
-    type: "website",
-    locale: "pl_PL",
-  },
 };
 
 export default function RootLayout({
