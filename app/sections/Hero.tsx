@@ -11,16 +11,16 @@ export default function Hero() {
       {/* background image */}
       <div aria-hidden className="pointer-events-none absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[url('/header.jpeg')] bg-cover bg-center" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/40 to-white/10 dark:from-[#0b1220]/70 dark:to-[#0a0a0a]/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/40 to-white/10" />
       </div>
       {/* decorative blobs */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -left-32 -top-32 z-0 h-80 w-80 rounded-full bg-sky-200/40 blur-3xl dark:bg-sky-400/20"
+        className="pointer-events-none absolute -left-32 -top-32 z-0 h-80 w-80 rounded-full bg-sky-200/40 blur-3xl"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-32 top-10 z-0 h-96 w-96 rounded-full bg-cyan-200/40 blur-3xl dark:bg-cyan-400/20"
+        className="pointer-events-none absolute -right-32 top-10 z-0 h-96 w-96 rounded-full bg-cyan-200/40 blur-3xl"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-28 sm:py-32 md:py-36">
@@ -29,15 +29,15 @@ export default function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.4 }}
-          className="max-w-3xl rounded-2xl bg-white/60 p-6 shadow-lg ring-1 ring-black/10 backdrop-blur-sm dark:bg-[#0b1220]/55 dark:ring-white/10 sm:p-8"
+          className="max-w-3xl rounded-2xl bg-white/60 p-6 shadow-lg ring-1 ring-black/10 backdrop-blur-sm sm:p-8"
         >
-          <span className="inline-flex items-center rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-900 dark:bg-sky-900/40 dark:text-sky-100">
+          <span className="inline-flex items-center rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-900">
             Gabinet Ortopedyczny
           </span>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
             Piotr Socha
           </h1>
-          <p className="mt-3 text-lg/8 text-gray-600 dark:text-gray-300 sm:mt-5">
+          <p className="mt-3 text-lg/8 text-gray-600 sm:mt-5">
             Specjalista ortopedii i traumatologii narządu ruchu. Diagnostyka,
             leczenie zachowawcze i operacyjne, USG narządu ruchu oraz iniekcje
             dostawowe. Kowary • Jelenia Góra • Karkonosze.
@@ -45,7 +45,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <motion.a
               href="tel:75718288"
-              className="inline-flex items-center justify-center rounded-xl bg-sky-600 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-sky-600/20 transition hover:-translate-y-0.5 hover:bg-sky-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-sky-500 dark:ring-offset-[#0a0a0a]"
+              className="inline-flex items-center justify-center rounded-xl bg-sky-600 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-sky-600/20 transition hover:-translate-y-0.5 hover:bg-sky-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-sky-500"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -53,7 +53,7 @@ export default function Hero() {
             </motion.a>
             <a
               href="#kontakt"
-              className="inline-flex items-center justify-center rounded-xl border border-gray-300 px-6 py-3 text-base font-semibold text-gray-900 transition hover:bg-gray-50 dark:border-white/20 dark:text-white dark:hover:bg-white/10"
+              className="inline-flex items-center justify-center rounded-xl border border-gray-300 px-6 py-3 text-base font-semibold text-gray-900 transition hover:bg-gray-50"
             >
               Dane kontaktowe
             </a>

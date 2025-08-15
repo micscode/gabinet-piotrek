@@ -12,12 +12,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Removed automatic dark mode based on system preference */
 
 body {
   background: var(--background);
@@ -28,8 +23,10 @@ body {
 /* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
-  color-scheme: light dark;
+  color-scheme: light;
 }
+
+/* Dark mode removed */
 
 /* Better typography defaults */
 .prose p { margin-top: 0.5rem; }

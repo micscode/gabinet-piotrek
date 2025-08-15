@@ -11,7 +11,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
+          className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
         >
           O mnie
         </motion.h2>
@@ -21,7 +21,7 @@ export default function About() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.1 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="mt-6 space-y-4 text-base/7 text-gray-700 dark:text-gray-300"
+          className="mt-6 space-y-4 text-base/7 text-gray-700"
         >
           <p>
             Lek. <strong>Piotr Socha</strong> — specjalista ortopedii i

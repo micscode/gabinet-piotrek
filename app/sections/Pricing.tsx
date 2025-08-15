@@ -34,7 +34,7 @@ export default function Pricing() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
+          className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
         >
           Cennik
         </motion.h2>
@@ -47,17 +47,17 @@ export default function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.05 * idx }}
               viewport={{ once: true, amount: 0.3 }}
-              className="flex items-start justify-between rounded-2xl border border-gray-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/[0.03]"
+              className="flex items-start justify-between rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
             >
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-lg font-semibold text-gray-900">
                   {item.name}
                 </h3>
-                <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                <p className="mt-1 text-sm text-gray-600">
                   {item.notes}
                 </p>
               </div>
-              <div className="ml-4 shrink-0 text-right text-xl font-bold text-gray-900 dark:text-white">
+              <div className="ml-4 shrink-0 text-right text-xl font-bold text-gray-900">
                 {item.price}
               </div>
             </motion.div>
@@ -69,7 +69,7 @@ export default function Pricing() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true, amount: 0.4 }}
-          className="mt-6 text-sm text-gray-600 dark:text-gray-400"
+          className="mt-6 text-sm text-gray-600"
         >
           Płatność gotówką lub kartą. Ceny mają charakter orientacyjny i mogą
           ulec zmianie; ostateczny koszt zależy od zakresu świadczenia.

@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section id="kontakt" className="bg-gray-50 py-20 dark:bg-white/[0.03] sm:py-24">
+    <section id="kontakt" className="bg-gray-50 py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
+          className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
         >
           Kontakt i rejestracja
         </motion.h2>
@@ -22,12 +22,12 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true, amount: 0.4 }}
-            className="rounded-2xl border border-gray-200 bg-white p-6 dark:border-white/10 dark:bg-white/[0.03]"
+            className="rounded-2xl border border-gray-200 bg-white p-6"
           >
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            <h3 className="text-lg font-semibold text-gray-900">
               Dane kontaktowe
             </h3>
-            <dl className="mt-4 space-y-3 text-gray-700 dark:text-gray-300">
+            <dl className="mt-4 space-y-3 text-gray-700">
               <div>
                 <dt className="text-sm">Telefon (rejestracja)</dt>
                 <dd className="text-base font-semibold">
@@ -54,7 +54,7 @@ export default function Contact() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="overflow-hidden rounded-2xl border border-gray-200 shadow-sm dark:border-white/10"
+            className="overflow-hidden rounded-2xl border border-gray-200 shadow-sm"
           >
             <iframe
               title="Mapa dojazdu"

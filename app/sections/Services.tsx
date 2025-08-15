@@ -28,14 +28,14 @@ const services: Array<{ title: string; description: string }> = [
 
 export default function Services() {
   return (
-    <section id="uslugi" className="bg-gray-50 py-20 dark:bg-white/[0.03] sm:py-24">
+    <section id="uslugi" className="bg-gray-50 py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
+          className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
         >
           Zakres usług
         </motion.h2>
@@ -48,12 +48,12 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.05 * index }}
               viewport={{ once: true, amount: 0.3 }}
-              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-white/[0.03]"
+              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md"
             >
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold text-gray-900">
                 {item.title}
               </h3>
-              <p className="mt-2 text-gray-600 dark:text-gray-300">
+              <p className="mt-2 text-gray-600">
                 {item.description}
               </p>
             </motion.div>

@@ -16,7 +16,7 @@ export default function Home() {
         <Pricing />
         <Contact />
       </main>
-      <footer className="border-t border-gray-200 py-10 text-center text-sm text-gray-600 dark:border-white/10 dark:text-gray-400">
+      <footer className="border-t border-gray-200 py-10 text-center text-sm text-gray-600">
         © {new Date().getFullYear()} Gabinet Ortopedyczny Piotr Socha
       </footer>
     </div>
