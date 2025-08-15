@@ -14,7 +14,7 @@ const prices = [
     notes: "Rozszerzona diagnostyka w gabinecie.",
   },
   {
-    name: "Iniekcje dostawowe (2 wizyty)",
+    name: "Iniekcje dostawowe (z wizytą)",
     price: "od 700 zł",
     notes: "Cena zależy od preparatu i zakresu leczenia.",
   },

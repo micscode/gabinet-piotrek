@@ -17,7 +17,7 @@ const services: Array<{ title: string; description: string }> = [
   },
   {
     title: "Iniekcje dostawowe",
-    description: "Nowoczesne terapie oraz blokady przeciwbólowe.",
+    description: "Nowoczesne terapie oraz blokady sterydowe.",
   },
   {
     title: "Kwalifikacje do leczenia",

@@ -31,8 +31,8 @@ export default function Contact() {
               <div>
                 <dt className="text-sm">Telefon (rejestracja)</dt>
                 <dd className="text-base font-semibold">
-                  <a className="hover:underline" href="tel:75718288">
-                    757 18 288
+                  <a className="hover:underline" href="tel:75718299">
+                  75 718 299
                   </a>
                 </dd>
               </div>
