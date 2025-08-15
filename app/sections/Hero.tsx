@@ -40,7 +40,7 @@ export default function Hero() {
           <p className="mt-3 text-lg/8 text-gray-600 sm:mt-5">
             Specjalista ortopedii i traumatologii narządu ruchu. Diagnostyka,
             leczenie zachowawcze i operacyjne, USG narządu ruchu oraz iniekcje
-            dostawowe. Kowary • Jelenia Góra • Karkonosze.
+            dostawowe. Kowary • Jelenia Góra • Kapacz • Karkonosze.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <motion.a

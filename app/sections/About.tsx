@@ -28,14 +28,14 @@ export default function About() {
             traumatologii narządu ruchu.
           </p>
           <p>
-            Absolwent Wydziału Lekarskiego Uniwersytetu Medycznego w Łodzi.
+            Absolwent Wydziału Wojskowo-Lekarskiego Uniwersytetu Medycznego w Łodzi.
             Doświadczenie zdobywał w Dolnośląskim Centrum Rehabilitacji i
             Ortopedii w Kamiennej Górze, gdzie nadal pełni obowiązki starszego asystenta.
           </p>
           <p>
             Regularnie poszerza swoje umiejętności na konferencjach i kursach.
             W kręgu jego szczególnych zainteresowań znajduje się chirurgia
-            maloinwazyjna stopy.
+            maloinwazyjna stopy oraz techniki artroskopowe(kolano, bark, staw skokowy).
           </p>
           <p>
             Zajmuję się diagnostyką i leczeniem operacyjnym oraz zachowawczym
