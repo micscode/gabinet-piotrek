@@ -20,7 +20,7 @@ const prices = [
   },
   {
     name: "Blokady przeciwbólowe",
-    price: "od 350 zł",
+    price: "400 zł",
     notes: "Szczegóły po kwalifikacji lekarskiej.",
   },
 ];

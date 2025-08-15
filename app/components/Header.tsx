@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const headerRef = useRef<HTMLElement | null>(null);
@@ -38,14 +39,17 @@ export default function Header() {
             Kontakt
           </a>
         </nav>
-        <motion.a
-          href="tel:75718288"
-          className="rounded-lg bg-sky-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-700 sm:inline-flex"
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          Zadzwoń
-        </motion.a>
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+          <motion.a
+            href="tel:75718288"
+            className="rounded-lg bg-sky-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-700 sm:inline-flex"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            Zadzwoń
+          </motion.a>
+        </div>
       </div>
     </header>
   );

@@ -1,19 +1,29 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function ThemeWatcher() {
-  useEffect(() => {
-    const media = window.matchMedia("(prefers-color-scheme: dark)");
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
-    const apply = () => {
-      const isDark = media.matches;
-      document.documentElement.classList.toggle("dark", isDark);
+  useEffect(() => {
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
+    const initialTheme = savedTheme || 'light';
+    
+    setTheme(initialTheme);
+    document.documentElement.classList.toggle("dark", initialTheme === 'dark');
+  }, []);
+
+  useEffect(() => {
+    const handleThemeChange = (event: CustomEvent<'light' | 'dark'>) => {
+      const newTheme = event.detail;
+      setTheme(newTheme);
+      document.documentElement.classList.toggle("dark", newTheme === 'dark');
+      localStorage.setItem('theme', newTheme);
     };
 
-    apply();
-    media.addEventListener("change", apply);
-    return () => media.removeEventListener("change", apply);
+    window.addEventListener('themeChange' as any, handleThemeChange);
+    return () => window.removeEventListener('themeChange' as any, handleThemeChange);
   }, []);
 
   return null;
