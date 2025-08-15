@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+}
+
+/* Better typography defaults */
+.prose p { margin-top: 0.5rem; }
