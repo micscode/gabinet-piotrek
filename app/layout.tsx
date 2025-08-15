@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Gabinet Ortopedyczny Piotr Socha",
   description:
     "Specjalista ortopedii i traumatologii narządu ruchu. Konsultacje, USG, iniekcje dostawowe, leczenie urazów i zmian przeciążeniowych.",
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://gabinet-piotrek.vercel.app"),
   openGraph: {
     title: "Gabinet Ortopedyczny Piotr Socha",
     description:
